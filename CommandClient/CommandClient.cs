@@ -346,6 +346,10 @@ namespace Proshot.CommandClient
                 this.networkStream.Write(metaBuffer, 0, metaBuffer.Length);
                 this.networkStream.Flush();
             }
+            catch
+            {
+
+            }
             finally
             {
                 semaphore.Release();
